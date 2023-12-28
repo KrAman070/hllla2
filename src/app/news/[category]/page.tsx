@@ -35,5 +35,5 @@ export async function getStaticPaths() {
     params: { category: category }
   }));
 
-  return { paths, fallback: false };
+  return { paths: [], fallback: false };
 }
