@@ -30,7 +30,7 @@ export default NewsCategory;
 //         category:category
 //     }));
 // }
-export async function getStaticPaths() {
+export async function getServerSideProps() {
   const paths = categories.map(category => ({
     params: { category: category }
   }));
